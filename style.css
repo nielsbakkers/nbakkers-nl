@@ -354,8 +354,7 @@ html,body{
 
   #sec2 > #wrapper-sec2 {
     aspect-ratio: 1.618;
-    width: 190vmin;
-    height: 190vmin;
+  
     display: grid;
     place-items: center;
   }
