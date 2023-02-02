@@ -1,0 +1,92 @@
+:root {
+    --ash-gray: #ccdad1ff;
+    --celadon-blue: #4281a4ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --portland-orange: #f46036ff;
+    --amazon: #537a5aff;
+    --forest-green-traditional: #143109ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--oxford-blue);
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--amazon);
+    color: var(--forest-green-traditional);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a > .fa-brands {
+    padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+}
+
+
+
+.container {
+    width: 246px;
+    overflow: hidden;
+}
+
+.container .text {
+    position: relative;
+    color: var(--orange-web);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background-color: var(--oxford-blue);
+    border-left: 2px solid var(--orange-web);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+a:link {
+    color: var(--forest-green-traditional);
+}
+
+a:visited {
+    color: var(--forest-green-traditional);
+}
+
+a:hover {
+    color: rgb(11, 27, 5);
+}
+
+a:active {
+    color: var(--forest-green-traditional);
+}

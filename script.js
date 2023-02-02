@@ -1,6 +1,6 @@
 //CHECK IF THE VISITOR IS USING A MOBILE DEVICE
 if (screen.width <= 699) {
-    document.location = "mobile.html";
+    document.location = "mobile/";
 }
 
 //PAGE SCROLL EFFECT
