@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAKKERS</title>
+    <style>
+
+        :root {
+            --ash-gray: #ccdad1ff;
+            --celadon-blue: #4281a4ff;
+            --oxford-blue: #14213dff;
+            --orange-web: #fca311ff;
+            --portland-orange: #f46036ff;
+            --amazon: #537a5aff;
+            --forest-green-traditional: #143109ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--oxford-blue);
+            overflow: hidden;
+        }
+
+        .container {
+            width: 246px;
+            overflow: hidden;
+        }
+
+        .container .text {
+            position: relative;
+            color: var(--orange-web);
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .text.sec-text:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 110%;
+            width: 100%;
+            background-color: var(--oxford-blue);
+            border-left: 2px solid var(--orange-web);
+            animation: animate 4s steps(12) infinite;
+        }
+
+        @keyframes animate {
+            40%, 60% {
+                left: calc(100% + 4px);
+            }
+            100% {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="text sec-text">Student</span>
+    </div>
+</body>
+<script type="text/javascript">
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "NBAKKERS";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "STUDENT";
+        }, 4000);
+        setTimeout(() => {
+            text.textContent = "Cyber_Security";
+        }, 8000);
+    }
+
+    textLoad();
+    setInterval(textLoad, 12000);
+
+</script>
+</html>
