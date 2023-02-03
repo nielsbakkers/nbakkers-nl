@@ -325,11 +325,11 @@ html,body{
   }
   
   #sec1{
-    background-color: black; 
+    background-color: var(--celadon-blue); 
   }
   
   #sec2{
-    background-color: var(--celadon-blue); 
+    background-color: black; 
   }
   
   #sec3{
@@ -340,23 +340,50 @@ html,body{
     background-color: var(--ash-gray);
   }
 
-  #sec2 > #wrapper-sec2 > h1 {
+  #sec1 > #wrapper-sec1 > h1 {
     color: var(--oxford-blue);
     font-size: 5rem;
     font-family: "Space Mono", monospace;
     position: absolute;
   }
 
-  #sec2 > #wrapper-sec2 > p {
+  #sec1 > #wrapper-sec1 > p {
     text-align: center;
     color: rgba(20, 33, 61, 0.514);
   }
 
-  #sec2 > #wrapper-sec2 {
+  #sec1 > #wrapper-sec1 {
     aspect-ratio: 1.618;
   
     display: grid;
     place-items: center;
   }
 
+  #sec3 {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+  }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    gap: 10px;
+    border: 2px solid var(--amazon);
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: var(--amazon);
+    border: 5px solid black;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 4vw;
+  }
+
+  .grid-container:hover {
+    border: 2px solid var(--portland-orange);
+  }

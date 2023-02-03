@@ -1,7 +1,11 @@
 //CHECK IF THE VISITOR IS USING A DESKTOP DEVICE
-if (screen.width >= 699) {
-    document.location = "/";
+var redirect = function() {
+    if (this.window.innerWidth >= 799) {
+        document.location = "/";
+    }
 }
+window.addEventListener('load', redirect, false);
+window.addEventListener('resize', redirect, false);
 
 //Typewriting effect
 const text = document.querySelector(".sec-text");

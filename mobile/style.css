@@ -24,10 +24,10 @@ body {
     overflow: hidden;
 }
 
-header {
+footer {
     position: fixed;
     right: 0;
-    top: 0;
+    bottom: 0;
     width: 100%;
     background-color: var(--amazon);
     color: var(--forest-green-traditional);
@@ -37,14 +37,13 @@ header {
 }
 
 a > .fa-brands {
-    padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+    padding: 1.5rem 0.3em 1.5rem 0.3rem;
 }
 
-
-
 .container {
-    width: 246px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .container .text {
