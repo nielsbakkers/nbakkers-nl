@@ -1,0 +1,98 @@
+/* Import all the section styling */
+@import url("section1.css");
+@import url("section2.css");
+@import url("section3.css");
+@import url("section4.css");
+@import url("section5.css");
+
+/* Define root variables */
+:root {
+    /* Colors */
+    --main-color: #14213dff;
+    --nav-active: #fca311ff;
+    --nav-bar: #f46036ff;
+    --accent-color-1: #4281a4ff;
+    --accent-color-2: #ccdad1ff;
+    --accent-color-3: #537a5aff;
+    --accent-color-4: #143109ff;
+
+    /* Variables for the footer */
+    --scbanner-width: 40vw;
+    --scbanner-height: 8vh;
+    --scbanner-elements-displayed: 5;
+    --scbanner-element-width: calc((var(--scbanner-width) * 2) / var(--scbanner-elements-displayed));
+    --scbanner-animation-duration: calc(var(--scbanner-elements) * 3s);
+}
+
+/* Universal styling for the whole document */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+}
+
+/* Styling for the nav object */
+.nav {
+    top: calc(100% / 2 - 60px);
+    position: fixed;
+    height: auto;
+    right: 10px;
+    z-index: 101;
+}
+
+/* Styling for the individual nav items */
+.nav-item {
+    list-style-type: none;
+    width: 8px;
+    height: 8px;
+    background-color: var(--nav-bar);
+    border-radius: 4px;
+    margin: 20px 15px;
+    transition: 0.3s ease;
+}
+
+/* Styling for the active nav item */
+.active {
+    background-color: var(--nav-active);
+}
+
+/* Styling for all of the sections */
+.section {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* Background color for section1 */
+#sec1 {
+    background-color: var(--accent-color-1);
+}
+
+/* Background color for section2 */
+#sec2 {
+    background-color: black;
+}
+
+/* Background color for section3 */
+#sec3 {
+    background-color: var(--accent-color-3);
+}
+
+/* Background color for section4 */
+#sec4 {
+    background-color: var(--accent-color-2);
+}
+
+/* Background color for section5 */
+#sec5 {
+    background-color: var(--accent-color-1);
+}

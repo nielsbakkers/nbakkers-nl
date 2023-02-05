@@ -1,6 +1,6 @@
 //CHECK IF THE VISITOR IS USING A DESKTOP DEVICE
-var redirect = function() {
-    if (this.window.innerWidth >= 799) {
+var redirect = function () {
+    if (this.window.innerWidth >= 850) {
         document.location = "/";
     }
 }

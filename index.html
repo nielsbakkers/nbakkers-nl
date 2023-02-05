@@ -1,60 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBAKKKERS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-    <ul>
-        <li id="tag1" class="active"></li>
-        <li id="tag2"></li>
-        <li id="tag3"></li>
-        <li id="tag4"></li>
-      </ul>
-        <div class="section" id="sec1">
-            <div id="wrapper-sec1">
-                <p>Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security. Cyber security is important because smartphones, computers and the internet are now such a fundamental part of modern life, that it's difficult to imagine how we'd function without them. From online banking and shopping, to email and social media, it's more important than ever to take steps that can prevent cyber criminals getting hold of our accounts, data, and devices.</p>
-                <h1 data-value="NBAKKERS">NBAKKERS</h1>
+    <ul class="nav">
+        <li id="tag1" class="nav-item active"></li>
+        <li id="tag2" class="nav-item"></li>
+        <li id="tag3" class="nav-item"></li>
+        <li id="tag4" class="nav-item"></li>
+        <li id="tag5" class="nav-item"></li>
+    </ul>
+    <div class="section" id="sec1">
+        <div id="wrapper-sec1">
+            <p>
+                Cyber security refers to the body of technologies, processes, and practices designed to protect
+                networks,
+                devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be
+                referred to as information technology security. Cyber security is important because smartphones,
+                computers and the internet are now such a fundamental part of modern life, that it's difficult to
+                imagine how we'd function without them. From online banking and shopping, to email and social media,
+                it's more important than ever to take steps that can prevent cyber criminals getting hold of our
+                accounts, data, and devices.
+            </p>
+            <h1 data-value="NBAKKERS">NBAKKERS</h1>
+        </div>
+    </div>
+    <div class="section" id="sec2">
+        <div id="wrapper" data-configuration="1" data-roundness="1">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+    <div class="section" id="sec3">
+        <div class="pass-generator">
+            <h1>PASSWORD GENERATOR</h1>
+            <span style="font-style: italic; margin-bottom: 1rem;">
+                click on the password to stop the generator.
+                <br>
+                the generated password has been copied to your clipboard.
+            </span>
+            <div class="grid-container" id="grid-container">
+                <div id="char1"></div>
+                <div id="char2"></div>
+                <div id="char3"></div>
+                <div id="char4"></div>
+                <div id="char5"></div>
+                <div id="char6"></div>
+                <div id="char7"></div>
+                <div id="char8"></div>
+                <div id="char9"></div>
+                <div id="char10"></div>
+                <div id="char11"></div>
+                <div id="char12"></div>
             </div>
         </div>
-        <div class="section" id="sec2">
-          <div id="wrapper" data-configuration="1" data-roundness="1">
-              <div class="shape"></div>
-              <div class="shape"></div>
-              <div class="shape"></div>
-              <div class="shape"></div>
-              <div class="shape"></div>
-              <div class="shape"></div>
-              <div class="shape"></div>
-          </div>
-      </div>
-      <div class="section" id="sec3">
-        <h1>PASSWORD GENERATOR</h1>
-        <span style="font-style: italic; margin-bottom: 1rem;">
-            click to start/stop the generator. 
-            <br> 
-            click the password to copy.
-        </span>
-        <div class="grid-container" id="grid-container">
-            <div id="char1"></div>
-            <div id="char2"></div>
-            <div id="char3"></div>
-            <div id="char4"></div>
-            <div id="char5"></div>
-            <div id="char6"></div>
-            <div id="char7"></div>
-            <div id="char8"></div>
-            <div id="char9"></div>
-            <div id="char10"></div>
-            <div id="char11"></div>
-            <div id="char12"></div>
+    </div>
+    <div class="section" id="sec4">
+        <h1 id="carousel-header">Interesting content</h1>
+        <div id="carousel-wrapper">
+            <div id="menu">
+                <div id="current-option">
+                    <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                    <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                </div>
+                <button id="previous-option"><i class="fa-solid fa-chevron-down fa-2xl"></i></button>
+                <button id="next-option"><i class="fa-solid fa-chevron-down fa-2xl"></i></button>
+            </div>
+            <div id="image"></div>
         </div>
-      </div>
-      <div class="section" id="sec4"><p>section 4</p></div>
+    </div>
+    <div class="section" id="sec5">
+        <div class="footer">
+            <div class="div1">
+                <div class="scrolling-banner">
+                    <ul class="banner-content">
+                        <li><i class="fab fa-github"></i></li>
+                        <li><span>cyber security</span></li>
+                        <li><i class="fab fa-docker"></i></li>
+                        <li><span>infrastructure</span></li>
+                        <li><i class="fab fa-github"></i></li>
+                        <li><span>red teaming</span></li>
+                        <li><i class="fab fa-cloudflare"></i></li>
+                        <li><span>blue teaming</span></li>
+                        <li><i class="fab fa-aws"></i></li>
+                        <li><span>ethical hacking</span></li>
+                        <li><i class="fab fa-js"></i></li>
+                        <li><span>automation</span></li>
+                        <li><i class="fab fa-node"></i></li>
+                        <li><span>scripting</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div2">
+                <h1>About me</h1>
+                <p>Student with a passion for ICT and an interest in cyber security. Inquisitive student who is open to
+                    challenges.</p><br>
+                <p>Likes to help others solve ICT problems or challenges.</p>
+            </div>
+            <div class="div3">
+            </div>
+            <div class="div4">
+                <div id="palette">
+                    <h1>Change website colors</h1>
+                    <p>click palette to change.</p>
+                </div>
+            </div>
+            <div class="div5">
+                <div id="socials">
+                    <a href="https://linkedin.com/in/nielsbakkers"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="https://github.com/nielsbakkers"><i class="fa-brands fa-github fa-2xl"></i></a>
+                </div>
+            </div>
+            <div class="div6">
+                <p>Copyright <span>-</span> 2023</p>
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="assets/script/script.js"></script>
+
 </html>

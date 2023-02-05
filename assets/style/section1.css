@@ -1,0 +1,19 @@
+#sec1>#wrapper-sec1>h1 {
+    color: var(--main-color);
+    font-size: 5rem;
+    position: absolute;
+}
+
+#sec1>#wrapper-sec1>p {
+    text-align: center;
+    color: var(--main-color);
+    opacity: 0.514;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#sec1>#wrapper-sec1 {
+    aspect-ratio: 1.618;
+    display: grid;
+    place-items: center;
+}

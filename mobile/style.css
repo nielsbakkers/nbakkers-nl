@@ -1,11 +1,11 @@
 :root {
-    --ash-gray: #ccdad1ff;
-    --celadon-blue: #4281a4ff;
-    --oxford-blue: #14213dff;
-    --orange-web: #fca311ff;
-    --portland-orange: #f46036ff;
-    --amazon: #537a5aff;
-    --forest-green-traditional: #143109ff;
+    --main-color: #14213dff;
+    --nav-active: #fca311ff;
+    --nav-bar: #f46036ff;
+    --accent-color-1: #4281a4ff;
+    --accent-color-2: #ccdad1ff;
+    --accent-color-3: #537a5aff;
+    --accent-color-4: #143109ff;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--oxford-blue);
+    background: var(--main-color);
     overflow: hidden;
 }
 
@@ -29,14 +29,14 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--amazon);
+    background-color: var(--accent-color-3);
     color: var(--forest-green-traditional);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a > .fa-brands {
+a>.fa-brands {
     padding: 1.5rem 0.3em 1.5rem 0.3rem;
 }
 
@@ -48,7 +48,7 @@ a > .fa-brands {
 
 .container .text {
     position: relative;
-    color: var(--orange-web);
+    color: var(--nav-active);
     font-size: 30px;
     font-weight: 600;
 }
@@ -60,15 +60,18 @@ a > .fa-brands {
     left: 0;
     height: 110%;
     width: 100%;
-    background-color: var(--oxford-blue);
-    border-left: 2px solid var(--orange-web);
+    background-color: var(--main-color);
+    border-left: 2px solid var(--nav-active);
     animation: animate 4s steps(12) infinite;
 }
 
 @keyframes animate {
-    40%, 60% {
+
+    40%,
+    60% {
         left: calc(100% + 4px);
     }
+
     100% {
         left: 0%;
     }
