@@ -45,7 +45,7 @@ $(document).ready(function () {
     var swipe = document.getElementsByTagName('.section');
 
     $(document).on('mousewheel DOMMouseScroll', function (event) {
-        event.preventDefault();
+        //event.preventDefault();
         if (delay) return;
         delay = true;
         setTimeout(function () { delay = false }, 100)
@@ -74,3 +74,14 @@ $(document).ready(function () {
         }
     });
 });
+
+console.log(`
+_   _ _____ _     _     ___  _ 
+| | | | ____| |   | |   / _ \| |
+| |_| |  _| | |   | |  | | | | |
+|  _  | |___| |___| |__| |_| |_|
+|_| |_|_____|_____|_____\___/(_)
+                                
+Good you are looking here, you never know what information is hidden in the console.
+`);
+

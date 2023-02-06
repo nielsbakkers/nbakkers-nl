@@ -26,7 +26,6 @@ for (const [key, value] of Object.entries(palettes)) {
 
 document.querySelectorAll('.palette-item').forEach(item => {
     item.addEventListener('click', event => {
-        console.log(event.target.id);
         changePalette(event.target.id);
     })
 })
@@ -37,7 +36,7 @@ function changePalette(id) {
     }
     var date = new Date();
     date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
-    document.cookie = `color=${id};expires=${date};SamSite="None";Secure`;
+    document.cookie = `color=${id};expires=${date};SamSite=None;Secure`;
 }
 
 //SCROLLING BANNE
